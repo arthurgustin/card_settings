@@ -9,7 +9,6 @@ class CardSettingsListPicker extends FormField<String> {
   CardSettingsListPicker({
     Key key,
     String label: 'Label',
-    double labelWidth = 120.0,
     TextAlign labelAlign,
     TextAlign contentAlign,
     String initialValue,
@@ -36,7 +35,6 @@ class CardSettingsListPicker extends FormField<String> {
                 },
                 child: CardSettingsField(
                   label: label,
-                  labelWidth: labelWidth,
                   labelAlign: labelAlign,
                   visible: visible,
                   icon: icon,
