@@ -71,8 +71,8 @@ class CardSettingsField extends StatelessWidget {
           .applyDefaults(Theme.of(context).inputDecorationTheme)
           .copyWith(
               errorText: errorText,
-              contentPadding: EdgeInsets.all(0.0),
-              border: InputBorder.none);
+              contentPadding: EdgeInsets.only(bottom: 3),
+              border: UnderlineInputBorder());
 
       decoratedContent = InputDecorator(decoration: decoration, child: content);
     }
@@ -149,7 +149,7 @@ class CardSettingsField extends StatelessWidget {
 
   TextStyle _buildLabelStyle(BuildContext context) {
     TextStyle labelStyle = TextStyle(
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
       fontSize: 16.0,
     );
 
